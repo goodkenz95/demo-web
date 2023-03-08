@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sample Website - Coming Soon!</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
+        <!-- css start here -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" />
+        <link rel="stylesheet" href="css/style.css?v=1.2" />
+        <link rel="stylesheet" href="css/theme.css" />
+        <!-- css end here -->
+		<script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/modernizr.js"></script>
+    </head>
+    <body class="bg-pattern">
+        <!-- Pre-Loader start here -->
+        <div id="preloader">
+            <div id="status"><i class="fa fa-spinner fa-spin"></i></div>
+        </div>
+        <!-- Pre-Loader end here -->
+        <!-- Main Container start here -->
+        <section class="container">
+
+            <!-- Content wrapper start here -->
+            <section class="contentWrapper text-center">
+                <h2>We're Coming Soon</h2>
+                <p>
+                    We are working very hard on the new version of our site.<br />
+                    It will bring a lot of new features.
+                </p>
+            </section>
+            <!-- Content wrapper end here -->
+            <!-- Footer start here -->
+            <footer>
+                <p>&copy; 2022. <a href="index.html">Sample Website</a></p>
+            </footer>
+            <!-- Footer end here -->
+        </section>
+        <!-- Main Container end here -->
+        <script type="text/javascript">
+            //<![CDATA[
+            $(window).load(function () {
+                // makes sure the whole site is loaded
+                $("#status").fadeOut(); // will first fade out the loading animation
+                $("#preloader").delay(350).fadeOut("slow"); // will fade out the white DIV that covers the website.
+                $("body").delay(350).css({ overflow: "visible" });
+            });
+            //]]>
+        </script>
+        ​
+        <!-- Java script end here -->
+    </body>
+</html>
